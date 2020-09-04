@@ -1,0 +1,50 @@
+{
+  "name": "tech-test-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "apollo-boost": "^0.1.15",
+    "axios": "^0.18.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
+    "enzyme-to-json": "^3.5.0",
+    "graphql": "^14.7.0",
+    "graphql-tag": "^2.10.4",
+    "jest": "^26.4.2",
+    "moment": "^2.27.0",
+    "raf": "^3.4.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "react-test-renderer": "^16.13.1"
+  },
+  "scripts": {
+    "bootstrap": "yarn install && yarn server:bootstrap",
+    "start": "yarn server:start & react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "runtest": "jest --configure=jest.config.json",
+    "eject": "react-scripts eject",
+    "server:bootstrap": "cd ./src/server && yarn install",
+    "server:start": "cd ./src/server && yarn dev"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
